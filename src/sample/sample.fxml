@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0"
+    prefWidth="400.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <MenuBar prefHeight="25.0" prefWidth="400.0" visible="false" />
+   <Label fx:id="brightnessLabel" alignment="CENTER_RIGHT" layoutX="272.0" layoutY="73.0" text="-" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="temperatureOutLabel" alignment="CENTER_RIGHT" layoutX="272.0" layoutY="95.0" text="-" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="temperatureInLabel" alignment="CENTER_RIGHT" layoutX="272.0" layoutY="117.0" text="-" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="pressureLabel" alignment="CENTER_RIGHT" layoutX="272.0" layoutY="139.0" text="-" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="altitudeLabel" alignment="CENTER_RIGHT" layoutX="272.0" layoutY="161.0" text="-" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="humidityLabel" alignment="CENTER_RIGHT" layoutX="272.0" layoutY="183.0" text="-" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Button fx:id="refreshButton" layoutX="338.0" layoutY="230.0" mnemonicParsing="false" onAction="#refresh" text="Start" visible="false" />
+   <Label fx:id="brightnessLabel1" layoutX="36.0" layoutY="73.0" prefHeight="18.0" stylesheets="@style.css" text="Brightness:" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="temperatureInLabel1" layoutX="36.0" layoutY="95.0" prefHeight="18.0" text="Temperature:" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="temperatureOutLabel1" layoutX="36.0" layoutY="117.0" prefHeight="18.0" text="Temperature Internal:"
+       textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="pressureLabel1" layoutX="36.0" layoutY="139.0" prefHeight="18.0" text="Pressure:" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="altitudeLabel1" layoutX="36.0" layoutY="161.0" prefHeight="18.0" text="Altitude:" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="humidityLabel1" layoutX="36.0" layoutY="183.0" prefHeight="18.0" text="Humidity:" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="brightnessLabel2" alignment="CENTER_RIGHT" layoutX="348.0" layoutY="73.0" prefHeight="18.0" text="\%"
+       textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="temperatureInLabel2" alignment="CENTER_RIGHT" layoutX="348.0" layoutY="95.0" prefHeight="18.0" text="°C" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="temperatureOutLabel2" alignment="CENTER_RIGHT" layoutX="348.0" layoutY="117.0" prefHeight="18.0" text="°C" textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="pressureLabel2" alignment="CENTER_RIGHT" layoutX="348.0" layoutY="139.0" prefHeight="18.0" text="hPa"
+       textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="altitudeLabel2" alignment="CENTER_RIGHT" layoutX="348.0" layoutY="161.0" prefHeight="18.0" text="m"
+       textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="humidityLabel2" alignment="CENTER_RIGHT" layoutX="348.0" layoutY="183.0" prefHeight="18.0" text="\%"
+       textAlignment="RIGHT">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Button fx:id="closeButton" layoutX="346.0" minHeight="18.0" minWidth="43.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="25.0" prefWidth="54.0" text="X" AnchorPane.leftAnchor="346.0"
+       AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   <Button fx:id="iconifyButton" layoutX="310.0" minHeight="18.0" minWidth="36.0" mnemonicParsing="false" onAction="#iconifyWindow" prefHeight="25.0" prefWidth="36.0" text="-" />
+</AnchorPane>
